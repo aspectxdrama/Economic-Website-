@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="copyright" content ="The Equilibrium 2025">
+        <meta name="author" content="Nicoleta Tanase">
+        <meta 
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; 'unsafe-inline'; ">
+        <meta charset="UTF-8">
+        <meta name="viewpoirt" content="width=device-width, initial-scale=1.0">
+        <title>The Equilibrium</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="website logo.jpg" alt="The Equilibrium logo" class="circular-logo">
+                        The Equilibrium
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="publications.html">Publications</a></li> 
+                    <li><a href= "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+       
+        <section id="home" class="hero">
+            <h1 class="hero-title fade delay-1">Welcome to The Equilibrium</h1>
+            <p class="hero-subtitle fade delay-2"> A student-led economics publication focused on policy and real-world analysis. </p>
+            <a href="publications.html" class="btn">Explore Publications</a>
+            <div class="section-divider"></div>
+        </section>
+
+        <section id="launch" class="launch-section alt-bg">
+            <h3>Launching Soon</h3>
+            <p class="launch-intro">
+                We are preparing our first publications and reviewing initial submissions.
+            </p>
+
+            <div class="launch-grid">
+                <div class="launch-card">First submissions under review</div>
+                <div class="launch-card">Editorial team preparing Issue 1</div>
+                <div class="launch-card">Call for submissions opening soon</div>
+            </div>
+        </section>
+
+        <section class="mission">
+            <div class="mission-text">
+                <h2>Our Mission</h2>
+                <p>We aim to bridge the gap between theory and practice by empowering students to share insights, research, and creative thinking in economics. Whether you are in school or university, your voice has a place here.</p>
+            </div>
+            <div class="mission-image">
+                <img src="research 2.png" alt="Our Mission">
+            </div>
+         </section>
+
+         <section class="quote-section">
+            <blockquote>
+            "Economics is a science. An economic system is a science of choice."
+            <span class="quote-author">- Paul Samuelson</span>    
+            </blockquote>
+         </section>
+
+         <section class="features">
+            <h2>What can you do?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="Learn 3.png" alt="Learn Economics">
+                    <h3>Learn Economics</h3>
+                    <p>Explore summaries, analyses, and new ideas in economics written by fellow students.</p>
+                </div>
+                <div class="card">
+                    <img src="write an article 2.png" alt="Write Articles">
+                    <h3>Write</h3>
+                    <p>Write your own article or review and share your economic perspective with the community.</p>
+                </div>
+                <div class="card">
+                    <img src="publish 2.png" alt="Submit your Work">
+                    <h2>Submit your work</h2>
+                    <p>Are you a student with a passion for economics? Share your blogs, essays, or literature review with The Equilibrium community!</p>
+                </div>
+            </div>
+         </section>
+       
+        <footer>
+            <p>&copy; 2026 The Equilibrium | All Rights Reserved</p>
+        </footer>
+
+        <script>
+            const fadeElements = document.querySelectorAll('.fade-in');
+            window.addEventlistener('scroll', () => {
+                fadeElements.forEach(el => {
+                    const rect = el.getBoundingClientReact();
+                    if (rect.top < window.innerHeight - 100) {
+                        el.classList.add('visible');
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="copyright" content="The Equilibrium 2025">
+    <meta name="author" content="Nicoleta Tanase">
+    <meta 
+      http-equiv="Content-Security-policy" 
+      content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; 'unsafe-inline';">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Contact - The Equilibrium</title> 
+       <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+    <nav>
+        <div class="logo">
+            <a href="contact.html">
+                <img src="website logo.jpg" alt="The Equilibrium logo" class="circular-logo">
+                The Equilibrium
+            </a>
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section> 
+      <h2>Contact Us</h2>
+      <p>Follow us on social media for updates</p> 
+      
+      <div class="contact-icons">
+        <a href="https://www.instagram.com/uor.equilibrium/" target="_blank" aria-label="Instagram">
+            <img src="Instagram logo.png" alt="Instagram logo">
+        </a>
+
+        <a href="mailto:theequilibriumwebsite@gmail.com" target="_blank" aria-label="Email">
+        <img src="Email logo.png" alt="Email logo">
+        </a>
+
+        <a href="https://www.linkedin.com/in/the-equilibrium-542a643aa/" target="_blank" aria-label="LinkedIn">
+            <img src="LinkedIn logo.png" alt="LinkedIn logo">
+        </a>
+      </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 The Equilibrium | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        const fadeElements = document.querySelectorAll('.fade-in');
+        window.addEventListener ('scroll' , () => {
+            fade.Elements.forEach (el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top <window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+    </script>
+    </body>
+</html>

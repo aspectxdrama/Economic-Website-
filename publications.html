@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="copyright" content="The Equilibrium 2025">
+        <meta name="author" content="Nicoleta Tanase">
+        <meta 
+        http-equiv="Content-Security-Policy"
+        content="default-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; 'unsafe-inline';">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>Publications - The Equilibrium</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body> 
+        <nav>
+            <div class="logo">
+                <a href="publications.html">
+                    <img src="website logo.jpg" alt="The Equilibrium logo" class="circular-logo">
+                    The Equilibrium
+                </a>
+            </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+
+       <section>
+        <h2>Publications</h2>
+        <p>The Equilibrium publishes student-written articles exploring economic theory, policy, and current affairs.</p>
+       </section> 
+
+       <section class="publications">
+
+        <a href="Elena's article.html" class="publication-link">
+        <article class="publication-card">
+
+            <div class="publication-image">
+                <img src="economics picture.jpg" alt="Economics Publication Layout">
+            </div>
+
+            <div class="publication-content">
+                <p class="meta">Elena Jenkins *Jan 04 * 5 min to read</p>
+                <h3>The Precious Oil of Venezuela. A Brief History of US & Venezuela's Conflict.</h3>
+                <p class="excerpt">
+                    On January 3rd, early in the morning, the US armed forces have struck Caracas in a military action of capturing the President Maduro and his wife...
+                </p>
+            </div>
+        </article>
+        </a>
+       </section>
+
+       <section id="submit-work" class="submit-section">
+        <div class="content">
+            <div class="text">
+        <h2>Submit Your Work</h2>
+        <p>Are you a student with a passion for economics? Share your blogs, essay, or literature review with The Equilibrium community!</p>
+
+        <p>
+            To submit your work, please email us at; 
+            <a href="mailto:theequilibriumwebsite@gmail.com" class="submit-email">
+                theequilibriumwebsite@gmail.com
+            </a>
+            with the following informations:
+        </p>
+        <div class="submission-info">
+            <p><strong>Your full name</strong></p>
+            <p><strong>Title of Your Work</strong></p>
+            <p><strong>Attach your file</strong>(PDF)</p>
+            <p><strong>Brief Description/Abstract</strong></p>
+    </div>
+
+
+       <p class= "review-note">We will review all submissions and publish selected works on this page! The word count limit is of 800 words.</p>
+       </div>
+       </div>
+    </section>
+
+       <footer>
+        <p>&copy; 2026 The Equilibrium | All Rights Reserved</p>
+       </footer>
+
+       <script>
+        const fadeElements = document.querySelectorAll ('.fade-in');
+        window.addEventLister('scroll', () => {
+            fadeElements.forEach(el => {
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight - 100) {
+                    el.classList.add('visible');
+                }
+            });
+        });
+       </script>
+    </body>
+</html>
